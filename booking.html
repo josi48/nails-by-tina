@@ -1,67 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nails by Tina | Book Appointment</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Nails by Tina</a>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="prices.html">Prices</a></li>
-          <li><a href="booking.html" class="active">Book Now</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nails by Tina | Book Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Nails by Tina</a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="section">
-    <div class="container booking-container">
-      <h1>Book an Appointment</h1>
-      <p>Fill out the form below and we’ll contact you to confirm your appointment.</p>
+    <main class="section">
+      <div class="container booking-container">
+        <h1>Book an Appointment</h1>
+        <p>
+          Fill out the form below and we’ll contact you to confirm your
+          appointment.
+        </p>
 
-      <form class="booking-form" id="bookingForm">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
+        <form class="booking-form" id="bookingForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
 
-        <label for="service">Select Service</label>
-        <select id="service" name="service" required>
-          <option value="">Choose a service</option>
-          <option value="Classic Manicure">Classic Manicure</option>
-          <option value="Luxury Pedicure">Luxury Pedicure</option>
-          <option value="Gel Manicure">Gel Manicure</option>
-          <option value="Acrylic Full Set">Acrylic Full Set</option>
-        </select>
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="Classic Manicure">Classic Manicure</option>
+            <option value="Luxury Pedicure">Luxury Pedicure</option>
+            <option value="Gel Manicure">Gel Manicure</option>
+            <option value="Acrylic Full Set">Acrylic Full Set</option>
+          </select>
 
-        <label for="date">Preferred Date</label>
-        <input type="date" id="date" name="date" required />
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required />
 
-        <label for="message">Additional Notes</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+          <label for="message">Additional Notes</label>
+          <textarea id="message" name="message" rows="5"></textarea>
 
-        <button type="submit" class="btn btn-primary">Submit Booking Request</button>
-      </form>
+          <button type="submit" class="btn btn-primary">
+            Submit Booking Request
+          </button>
+        </form>
 
-      <p id="formMessage" class="form-message"></p>
-    </div>
-  </main>
+        <p id="formMessage" class="form-message"></p>
+      </div>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Nails by Tina. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Nails by Tina. All rights reserved.</p>
+      </div>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
