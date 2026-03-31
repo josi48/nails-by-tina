@@ -1,12 +1,18 @@
 const bookingForm = document.getElementById("bookingForm");
 const formMessage = document.getElementById("formMessage");
 
-if (bookingForm) {
+if (bookingForm && formMessage) {
   bookingForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    const name = document.getElementById("name").value.trim();
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+
+    formMessage.style.display = "block";
     formMessage.textContent =
-      "Thank you! Your booking request has been received. We will contact you soon to confirm your appointment.";
+      `Thank you, ${name}! Your request for ${service} on ${date} at ${time} has been received. Nails by Tina will contact you soon to confirm your appointment.`;
 
     bookingForm.reset();
   });
