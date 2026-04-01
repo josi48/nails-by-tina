@@ -15,6 +15,9 @@ h1, h2, h3 {
   font-weight: 700;
   font-size: 1.5rem;
 }
+.logo {
+  font-family: 'Great Vibes', cursive;
+}
 
 :root {
   --pink: #f7c6d9;
