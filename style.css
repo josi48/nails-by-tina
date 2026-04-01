@@ -549,3 +549,40 @@ h2 {
   font-weight: 600;
   display: none;
 }
+/* hero */
+.hero {
+  background: url('images/pic1.jpg') center/cover no-repeat;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(255, 240, 246, 0.85);
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: var(--soft-gray);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--deep-pink);
+  color: var(--deep-pink);
+}
